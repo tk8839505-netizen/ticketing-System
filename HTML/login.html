@@ -5,19 +5,19 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Smart Ticket Management System</title>
 
-    <link rel="stylesheet"
-          href="../css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 </head>
 
 <body>
 
     <main class="login-page">
+
+        <!-- Left Panel -->
 
         <section class="left-panel">
 
@@ -33,47 +33,35 @@
 
                 <h2>Management System</h2>
 
-            </div>
+                <p>
 
-            <p>
+                    Enterprise Ticket Management Platform
 
-                Enterprise Ticket Management Platform
-
-            </p>
-
-            <div class="features">
-
-                <p>✔ Secure Login</p>
-
-                <p>✔ Fast Performance</p>
-
-                <p>✔ Easy Management</p>
+                </p>
 
             </div>
 
         </section>
 
+        <!-- Right Panel -->
+
         <section class="right-panel">
 
             <div class="login-card">
 
-                <h2>
-
-                    Welcome Back
-
-                </h2>
+                <h2>Welcome Back</h2>
 
                 <p>
 
-                    Please login to continue
+                    Login to continue
 
                 </p>
 
-                <form>
+                <form id="loginForm">
 
                     <div class="input-group">
 
-                        <label>
+                        <label for="username">
 
                             Username
 
@@ -88,7 +76,7 @@
 
                     <div class="input-group">
 
-                        <label>
+                        <label for="password">
 
                             Password
 
@@ -98,6 +86,7 @@
                             type="password"
                             id="password"
                             placeholder="Enter Password">
+
 
                     </div>
 
@@ -119,13 +108,51 @@
 
                     </div>
 
-                    <button id="loginBtn">
+                    <button
+                        type="submit"
+                        id="loginBtn">
 
                         Login
 
                     </button>
 
+                    <p id="message"></p>
+
                 </form>
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span>OR</span>
+
+                </div>
+
+                <!-- Google Button -->
+
+                <button class="google-btn">
+
+                      <img
+                         src="https://www.svgrepo.com/show/475656/google-color.svg"
+                         alt="Google">
+
+                    Continue with Google
+
+                </button>
+
+                <!-- Signup -->
+
+                <div class="signup">
+
+                    Don't have an account?
+
+                    <a href="#">
+
+                        Create New Account
+
+                    </a>
+
+                </div>
 
             </div>
 
