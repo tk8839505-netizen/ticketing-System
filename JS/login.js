@@ -41,9 +41,17 @@ loginForm.addEventListener("submit", function(event){
 
      message.textContent = "Login Successful";
      message.style.color = "green";
+    
+      setTimeout(function(){
+
+      window.location.href="../html/dashboard.html";
+
+      },1500);
+
     } else{
 
      message.textContent ="Invalid Username or Password";
      message.style.color = "red";
+
     }
 });

@@ -4,10 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
-    <p>hello</p>
-    <script src="../JS/dashboard.js"></script>
+    
+     <div class="dashboard">
+
+        
+        <aside class="sidebar">
+
+
+          <div class="logo">
+
+           ST
+
+          </div>
+
+          <h2>Smart Ticket</h2>
+
+
+          <ul class="menu">
+
+           <li class="active">
+
+            <span>🏠</span>
+             
+            Dashboard
+
+           </li>
+
+           <li>
+            
+            <span>🎫</span>
+
+              Tickets
+              
+              
+            </li>
+
+           <li>
+             <span>👥</span>
+
+             Users
+
+           </li>
+
+           <li>
+
+               <span>📊</span>
+
+               Reports
+
+            </li>
+
+           <li>
+
+             <span>⚙️</span>
+
+              Settings
+
+           </li>
+
+           <li>
+
+             <span>🚪</span> 
+
+             Logout
+
+           </li>
+
+
+          </ul>
+
+        </aside>
+
+
+        <main class="main-content">
+
+           
+            <header class="topbar">
+
+            <div class="page-title">
+
+              <h1>
+
+               Dashboard
+
+              </h1>
+            </div>
+
+            <div class="topbar-right">
+
+            <input 
+                type="text" 
+                placeholder="Search..."
+                class="search-box"
+                >
+                 <span class="top-icon">🔔</span>
+
+                 <span class="top-icon">🌙</span>
+
+                 <div class="profile">
+
+                   <div class="avatar">
+
+                      TK
+
+                   </div>
+
+                   <div>
+
+                    <h4>Tushar kumar</h4>
+
+                    <small>Administrator</small>
+                   </div>
+
+                 </div>
+
+
+            </div>
+
+            </header>
+
+            <section class="content">
+
+               <div class="cards">
+
+                <div class="card">
+
+                <h3>Total Tickets</h3>
+                 
+
+                 <h1>125</h1>
+
+                 <p>+12 Today</p>
+
+                </div>
+
+                <div class="card">
+
+                   <h3>Open Tickets</h3>
+
+                   <h1>38</h1>
+
+                   <p>Needs Attention</p>
+
+                </div>
+
+                <div class="card">
+
+
+                    <h3>Resolved</h3>
+
+                    <h1>72</h1>
+
+                    <p>Completed</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Pending</h3>
+
+                    <h1>15</h1>
+
+                    <p>Waiting</p>
+
+
+                </div>
+
+               </div>
+
+              <section class="ticket-section">
+
+                 <div class="table-header">
+                    <h2>Recent Tickets</h2>
+                 </div>
+
+                 <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Customer</th>
+
+                              <th>Issue</th>
+
+                              <th>Priority</th>
+
+                              <th>Status</th>
+
+                              <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                          <td>#101</td>
+
+                          <td>Rahul</td>
+
+                          <td>Login Error</td>
+
+                          <td><span class="priority high">High</span></td>
+
+                          <td><span class="status open">Open</span></td>
+
+                          <td><button class="view-btn">View</button></td>
+
+                      </tr>
+
+
+                     <tr>
+
+                         <td>#102</td>
+
+                         <td>Aman</td>
+
+                         <td>Payment Failed</td>
+
+                         <td><span class="priority medium">Medium</span></td>
+
+                        <td><span class="status pending">Pending</span></td>
+
+                       <td><button class="view-btn">View</button></td>
+
+                     </tr>
+
+                     <tr>
+ 
+                        <td>#103</td>
+
+                       <td>Priya</td>
+
+                       <td>Bug Report</td>
+
+                      <td><span class="priority low">Low</span></td>
+
+                      <td><span class="status closed">Closed</span></td>
+
+                      <td><button class="view-btn">View</button></td>
+
+                     </tr>
+
+
+                    </tbody>
+                 </table>
+
+              </section>
+            </section>
+
+
+        </main>
+
+
+     </div>
+
+
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>
