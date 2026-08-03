@@ -14,6 +14,7 @@ body{
 
     background:#F4F7FC;
 
+
 }
 
 .dashboard{
@@ -399,7 +400,8 @@ body{
 /* TICKET SECTION */
 
 .ticket-section{
-
+ 
+    width: 100%;
     margin-top:40px;
 
     background:white;
@@ -433,6 +435,22 @@ body{
 
     border-collapse:collapse;
 
+    overflow:hidden;
+
+    border-radius:12px;
+
+}
+
+.ticket-table th:first-child{
+
+    border-top-left-radius:10px;
+
+}
+
+.ticket-table th:last-child{
+
+    border-top-right-radius:10px;
+
 }
 
 .ticket-table th{
@@ -462,31 +480,50 @@ body{
 
 .status{
 
-    padding:6px 12px;
+    display:inline-flex;
 
-    border-radius:20px;
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 90px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
 
     color:white;
 
-    font-size:14px;
+    font-size:13px;
+
+    font-weight: 600;
+
+    letter-spacing: .3px;
+
+    transition:.3s;
 
 }
 
 .open{
 
-    background:#3B82F6;
+     background:#2563EB;
 
 }
 
 .pending{
 
-    background:#F59E0B;
+     background:#F59E0B;
 
 }
 
 .closed{
 
-    background:#10B981;
+    background:#16A34A;
+
+}
+.status:hover{
+
+    transform:scale(1.08);
 
 }
 
@@ -495,30 +532,57 @@ body{
 
 .priority{
 
-    font-weight:bold;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align: center;
+
+    min-width: 70px;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    color: white;
+
+    font-size:13px;
+
+    font-weight: 600;
+
 
 }
 
 .high{
 
-    color:#EF4444;
+    background:#DC2626;
 
 }
 
 .medium{
 
-    color:#F59E0B;
+    background:#F59E0B;
 
 }
 
 .low{
 
-    color:#10B981;
+     background:#10B981;
 
 }
  
 
-/* VIEW BUTTON */
+/* ACTION BUTTON */
+
+.action-buttons{
+
+    display: flex;
+
+    gap: 10px;
+}
 
 .view-btn{
 
@@ -538,8 +602,180 @@ body{
 
 }
 
+
+/* Edit Button */
+
+.edit-btn{
+
+    border:none;
+
+    outline:none;
+
+    background:#F59E0B;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#D97706;
+
+    transform:translateY(-2px);
+
+}
+
+/* Delete Button */
+
+.delete-btn{
+
+    border:none;
+
+    outline:none;
+
+    background:#DC2626;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#B91C1C;
+
+    transform:translateY(-2px);
+
+}
+
+/* View Button Improvement */
+
 .view-btn:hover{
 
+    transform:translateY(-2px);
+
     background:#312E81;
+
+}
+
+.ticket-table tbody tr{
+
+     transition:all .3s ease;
+
+}
+
+.ticket-table tbody tr:hover{
+
+    background:#EEF4FF;
+
+    cursor:pointer;
+
+     transform:scale(1.01);
+
+}
+.ticket-table th{
+
+    background:#F8FAFC;
+
+    color:#111827;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+.ticket-table td{
+
+    color:#374151;
+
+    font-size:15px;
+
+}
+.ticket-table tbody tr:nth-child(even){
+
+    background:#FAFBFC;
+
+}
+
+.ticket-table tbody tr:nth-child(odd){
+
+    background:#FFFFFF;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    width: 100%;
+
+    clear: both;
+
+    margin-top:40px;
+
+    padding:25px;
+
+     background:linear-gradient(
+        180deg,
+        white,
+        rgb(176, 176, 194)
+    );
+
+    border-radius:px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.footer p{
+
+    color:#252830;
+
+    font-size:15px;
+
+    margin-bottom:8px;
+
+}
+
+.footer strong{
+
+    color:#1f1e3d;
+
+}
+
+.footer span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:15px;
+
+    color:#2e3033;
 
 }
