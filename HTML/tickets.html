@@ -29,49 +29,68 @@
 
            <li>
 
-            <span>🏠</span>
+            <a href="dashboard.html">
+
+              <span>🏠</span>
              
-            Dashboard
+               Dashboard
+
+            </a>
 
            </li>
 
            <li class="active">
             
-            <span>🎫</span>
+            <a href="tickets.html">
+              <span>🎫</span>
 
-              Tickets
+               Tickets
               
+            </a>
               
             </li>
 
            <li>
-             <span>👥</span>
+             <a href="users.html">
 
-             Users
+              <span>👥</span>
+
+                Users
+
+             </a>
 
            </li>
 
            <li>
 
-               <span>📊</span>
+              <a href="reports.html">
 
-               Reports
+                 <span>📊</span> 
+
+                  Reports
+
+              </a>
 
             </li>
 
            <li>
 
-             <span>⚙️</span>
+             <a href="setting.html">
+
+              <span>⚙️</span>
 
               Settings
 
+             </a>
            </li>
 
            <li>
 
-             <span>🚪</span> 
+              <span>🚪</span> 
 
-             Logout
+               Logout
+
+           
 
            </li>
 
@@ -123,6 +142,10 @@
 
                  </div>
 
+                 </div>
+
+                </header>
+
 
 
                  <section class="content">
@@ -141,11 +164,321 @@
                   </div>
 
                   <div class="ticket-card">
+ 
+                    <div class="input-group">
 
+ 
+                      <label for="company">
+
+                        Client / Company
+
+                      </label>
+
+                      <select  id="company">
+
+                        <option value="" disabled selected>Select Company</option>
+
+                        <option value="tcs">TCS</option>
+
+                        <option value="infosys">Infosys</option>
+
+                        <option value="wipro">Wipro</option>
+
+                        <option value="cognifyz">Cognifyz</option>
+
+                      </select>
+
+                    </div>
                     
+
+                    <div class="input-group">
+
+                      <label for="requestedBy">
+
+                      Requested by
+
+                      </label>
+
+                      <select  id="requestedBy">
+
+                        <option value="">Select Employee</option>
+
+                      </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                      <label for="mailTo">
+
+                        Mail To
+
+                      </label>
+
+                      <input 
+                          type="email"
+                          id="mailTo"
+                          placeholder="Email will appear automatically"
+                          readonly
+                      >
+                    </div>
+
+                    <div class="input-group">
+
+                      <label for="requestMode">
+
+                        Request  Mode
+
+                      </label>
+
+                      <select id="requestMode">
+
+                        <option value=""disabled selected>Select Request Mode</option>
+
+                        <option>Email</option>
+                        <option>Phone Call</option>
+                        <option>Portal</option>
+                        <option>Walk-In</option>
+
+                      </select>
+
+                    </div>
 
 
                   </div>
+
+
+                  <div class="ticket-card">
+
+                    <div class="input-group">
+
+                         <label for="ticketType">
+
+                             Ticket Type
+
+                         </label>
+
+                         <select id="ticketType">
+
+                             <option value=""disabled selected>Select Ticket Type</option>
+
+                             <option>Incident</option>
+
+                             <option>Service Request</option>
+
+                             <option>Change Request</option>
+
+                            <option>Project Inquiry</option>
+
+                      </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                      <label for="priority">
+
+                        Priority
+
+                      </label>
+
+                      <select id="priority">
+
+                        <option>Low</option>
+
+                        <option>Medium</option>
+
+                        <option>High</option>
+
+                        <option>Urgent</option>
+
+                      </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                      <label for="agent">
+
+                        Assigned Agent
+
+                      </label>
+
+                      <select id="agent">
+
+                        <option value="" disabled selected>Select Agent</option>
+
+                        <option>Rahul sharma </option>
+
+                        <option>Tushar Kumar </option>
+
+                        <option>Arti Sharma </option>
+
+                        <option> Ravi Rajput </option>
+                      </select>
+                    </div>
+
+                    <div class="input-group">
+
+                     <label for="issueType">
+
+                         Issue Type
+
+                      </label>
+
+                     <select id="issueType">
+
+                        <option value=""disabled selected>Select Issue</option>
+
+                        <option>Login Issue</option>
+
+                        <option>Payment Issue</option>
+
+                        <option>Software Bug</option>
+
+                        <option>Network Problem</option>
+
+                        <option>Hardware Issue</option>
+
+                     </select>
+
+                  </div>
+
+
+                  <div class="input-group">
+
+                    <label for="resolutionUnit">
+
+                          Resolution Time Unit
+
+                    </label>
+
+                    <select id="resolutionUnit">
+
+                      <option value="" disabled selected>Select Unit</option>
+
+                      <option value="hours">Hours</option>
+
+                      <option value="days">Days</option>
+
+                    </select>
+
+                  </div>
+
+          
+
+                  <div class="input-group">
+
+                   <label for="resolutionTime">
+
+                       Resolution Time
+
+                   </label>
+
+                   <input
+                      type="number"
+                      id="resolutionTime"
+                      min="1"
+                      placeholder="Enter Time"
+                     >
+
+                   </div>
+
+                  </div>
+
+                  <div class="ticket-card">
+
+                  <div class="input-group">
+
+                      <label for="subject">
+
+                          Subject <span class="required">*</span>
+
+                      </label>
+
+                      <input
+                          type="text"
+                          id="subject"
+                          placeholder="Enter Ticket Subject"
+                          required
+                      >
+
+                      <small>
+
+                          Enter a short title for your issue.
+
+                      </small>
+
+                  </div>
+
+                  <div class="input-group full-width">
+
+                      <label for="description">
+
+                          Description
+
+                      </label>
+
+                      <textarea
+                          id="description"
+                          rows="7"
+                          placeholder="Describe your issue..."
+                      ></textarea>
+
+                      <small>
+
+                          Description is optional.
+
+                      </small>
+
+                  </div>
+
+
+                  <div class="input-group full-width">
+
+                      <label for="attachment">
+
+                          Attach File
+
+                      </label>
+
+                      <input
+                          type="file"
+                          id="attachment"
+                      >
+
+                      <small>
+
+                          Upload screenshots or documents if required.
+
+                      </small>
+
+                  </div>
+
+                  </div>
+
+
+                  <div class="ticket-card">
+
+                  <div class="button-group">
+
+                      <button type="submit" class="submit-btn">
+
+                          Submit 
+
+                      </button>
+
+                      <button type="button" class="cancel-btn">
+
+                          Cancel
+
+                      </button>
+
+                  </div>
+                  </div>
+                
 
                  </section>
  
@@ -162,9 +495,6 @@
 
        <!-- FOOTER
 
-            </div>
-
-            </header>
 
                   <footer class="footer">
 
