@@ -1,3 +1,11 @@
+.user{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
 .user-cards{
 
     display:grid;
@@ -11,7 +19,7 @@
 }
 .user-card{
 
-   background:linear-gradient(#ffffff,#f8fafc);
+    background: linear-gradient(rgb(241, 240, 240),white,rgb(250, 249, 249));
 
     padding:25px;
 

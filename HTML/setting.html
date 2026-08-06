@@ -11,7 +11,7 @@
 
     
         
-     <div class="ticket">
+     <div class="setting">
 
         
         <aside class="sidebar">
@@ -84,19 +84,6 @@
 
              </a>
            </li>
-
-           <li>
-
-             
-
-              <span>🚪</span> 
-
-             Logout
-
-            
-           </li>
-
-
           </ul>
 
         </aside>
@@ -111,7 +98,7 @@
 
               <h1>
 
-               Create New Ticket
+               Setting
 
               </h1>
             </div>
@@ -143,11 +130,311 @@
                    </div>
 
                  </div>
+            </div>
+          </header>
 
+          <section class="content">
+
+            <div class="page-header">
+
+                <h1>Settings</h1>
+
+                <p>
+
+                    Manage your account preferences and system settings.
+
+                </p>
 
             </div>
 
-            </header>
+            <div class="settings-card">
+
+             <h2>Profile Information</h2>
+
+              <div class="settings-form">
+
+                  <div class="input-group">
+
+                      <label for="fullName">
+
+                          Full Name
+
+                      </label>
+
+                      <input
+                          type="text"
+                          id="fullName"
+                          placeholder="Enter Full Name"
+                      >
+
+                  </div>
+
+                  <div class="input-group">
+
+                      <label for="email">
+
+                          Email
+
+                      </label>
+
+                      <input
+                          type="email"
+                          id="email"
+                          placeholder="Enter Email"
+                      >
+
+                  </div>
+
+                  <div class="input-group">
+
+                      <label for="phone">
+
+                          Phone Number
+
+                      </label>
+
+                      <input
+                          type="tel"
+                          id="phone"
+                          placeholder="Enter Phone Number"
+                      >
+
+                  </div>
+
+                  <div class="input-group">
+
+                      <label for="department">
+
+                          Department
+
+                      </label>
+
+                      <select id="department">
+
+                          <option value="" disabled selected>
+
+                              Select Department
+
+                          </option>
+
+                          <option>Support</option>
+
+                          <option>Development</option>
+
+                          <option>HR</option>
+
+                          <option>Accounts</option>
+
+                      </select>
+
+                  </div>
+
+              </div>
+
+              <div class="button-group">
+
+                  <button class="save-btn">
+
+                      Save Changes
+
+                  </button>
+
+              </div>
+
+            </div>
+
+            <div class="settings-card">
+
+              <h2>Change Password</h2>
+
+              <div class="settings-form">
+
+                  <div class="input-group">
+
+                      <label for="currentPassword">
+
+                          Current Password
+
+                      </label>
+
+                      <input
+                          type="password"
+                          id="currentPassword"
+                          placeholder="Enter Current Password"
+                      >
+
+                  </div>
+
+                  <div class="input-group">
+
+                      <label for="newPassword">
+
+                          New Password
+
+                      </label>
+
+                      <input
+                          type="password"
+                          id="newPassword"
+                          placeholder="Enter New Password"
+                      >
+
+                  </div>
+
+                  <div class="input-group">
+
+                      <label for="confirmPassword">
+
+                          Confirm Password
+
+                      </label>
+
+                      <input
+                          type="password"
+                          id="confirmPassword"
+                          placeholder="Confirm New Password"
+                      >
+
+                  </div>
+
+              </div>
+
+              <div class="button-group">
+
+                  <button class="update-btn">
+
+                      Update Password
+
+                  </button>
+
+              </div>
+
+          </div>
+
+          <div class="settings-card">
+
+            <h2>Notification Settings</h2>
+
+            <div class="notification-list">
+
+                <label class="notification-item">
+
+                    <input type="checkbox" checked>
+
+                    <span>Email Notifications</span>
+
+                </label>
+
+                <label class="notification-item">
+
+                    <input type="checkbox" checked>
+
+                    <span>SMS Notifications</span>
+
+                </label>
+
+                <label class="notification-item">
+
+                    <input type="checkbox">
+
+                    <span>Push Notifications</span>
+
+                </label>
+
+                <label class="notification-item">
+
+                    <input type="checkbox" checked>
+
+                    <span>Ticket Assigned Alerts</span>
+
+                </label>
+
+                <label class="notification-item">
+
+                    <input type="checkbox">
+
+                    <span>Weekly Report</span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="settings-card">
+
+            <h2>Theme Settings</h2>
+
+            <div class="theme-options">
+
+                <label class="theme-item">
+
+                    <input
+                        type="radio"
+                        name="theme"
+                        value="light"
+                    >
+
+                    <span>🌞 Light Mode</span>
+
+                </label>
+
+                <label class="theme-item">
+
+                    <input
+                        type="radio"
+                        name="theme"
+                        value="dark"
+                        checked
+                    >
+
+                    <span>🌙 Dark Mode</span>
+
+                </label>
+
+            </div>
+
+            <div class="button-group">
+
+                <button class="theme-btn">
+
+                    Save Settings
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="settings-card">
+
+            <h2>Account Actions</h2>
+
+            <p>
+
+                You can reset your settings or logout from your account.
+
+            </p>
+
+            <div class="account-buttons">
+
+                <button class="reset-btn">
+
+                    Reset Settings
+
+                </button>
+
+                <button class="logout-btn">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+      </section>
     
     
     <script src="../JS/settings.js"></script>
