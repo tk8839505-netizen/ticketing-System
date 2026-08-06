@@ -11,7 +11,7 @@
 
     
         
-     <div class="ticket">
+     <div class="users">
 
         
         <aside class="sidebar">
@@ -110,7 +110,7 @@
 
               <h1>
 
-               Create New Ticket
+               User Management
 
               </h1>
             </div>
@@ -147,7 +147,372 @@
             </div>
 
             </header>
-    
+
+            <section class="content">
+
+                <div class="page-header">
+
+                    <h1>Users Management</h1>
+
+                    <p>
+
+                        Manage system users and their information.
+
+                    </p>
+
+                </div>
+
+              <section class="user-cards">
+
+                      <div class="user-card">
+
+                          <span class="card-icon">👥</span>
+
+                          <h3>Total Users</h3>
+
+                          <h2>125</h2>
+
+                      </div>
+
+                      <div class="user-card">
+
+                          <span class="card-icon">✅</span>
+
+                          <h3>Active Users</h3>
+
+                          <h2>98</h2>
+
+                      </div>
+
+                      <div class="user-card">
+
+                          <span class="card-icon">❌</span>
+
+                          <h3>Inactive Users</h3>
+
+                          <h2>20</h2>
+
+                      </div>
+
+                      <div class="user-card">
+
+                          <span class="card-icon">🆕</span>
+
+                          <h3>New Users</h3>
+
+                          <h2>07</h2>
+
+                      </div>
+
+                      </section>
+
+                      <div class="user-toolbar">
+
+                          <input
+                              type="text"
+                              class="user-search"
+                              placeholder="Search Users..."
+                          >
+
+                          <button class="add-user-btn">
+
+                              + Add User
+
+                          </button>
+
+                      </div>
+
+                     <div class="user-table-card">
+
+                          <table class="user-table">
+
+                              <thead>
+
+                                  <tr>
+
+                                      <th>Name</th>
+
+                                      <th>Email</th>
+
+                                      <th>Role</th>
+
+                                      <th>Status</th>
+
+                                      <th>Action</th>
+
+                                  </tr>
+
+                              </thead>
+
+                              <tbody>
+
+                                <tr>
+
+                                  <td>
+
+                                      <div class="user-info">
+
+                                          <div class="user-avatar">
+
+                                              RS
+
+                                          </div>
+
+                                          <div>
+
+                                              <strong>Rahul Sharma</strong>
+
+                                          </div>
+
+                                      </div>
+
+                                  </td>
+
+                                  <td>rahul@gmail.com</td>
+
+                                  <td>
+
+                                      <span class="role-badge admin-role">
+
+                                          Admin
+
+                                      </span>
+
+                                  </td>
+
+                                  <td>
+
+                                      <span class="status active-status">
+
+                                          Active
+
+                                      </span>
+
+                                  </td>
+
+                                  <td>
+
+                                      <button class="edit-btn">
+
+                                          ✏️ Edit
+
+                                      </button>
+
+                                      <button class="delete-btn">
+
+                                          🗑 Delete
+
+                                      </button>
+
+                                  </td>
+
+                              </tr>  
+
+                              <tr>
+
+                                  <td>
+
+                                      <div class="user-info">
+
+                                          <div class="user-avatar">
+
+                                              AM
+
+                                          </div>
+
+                                          <div>
+
+                                              <strong>Aman Kumar</strong>
+
+                                          </div>
+
+                                      </div>
+
+                                  </td>
+
+                                  <td>aman@gmail.com</td>
+
+                                  <td>
+
+                                      <span class="role-badge agent-role">
+
+                                          Agent
+                                      </span>
+
+                                  </td>
+
+                                  <td>
+
+                                      <span class="status active-status">
+
+                                          Active
+
+                                      </span>
+
+                                  </td>
+
+                                  <td>
+
+                                      <button class="edit-btn">
+
+                                          ✏️ Edit
+
+                                      </button>
+
+                                      <button class="delete-btn">
+
+                                          🗑 Delete
+
+                                      </button>
+
+                                  </td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>
+
+                                    <div class="user-info">
+
+                                        <div class="user-avatar">
+
+                                            TS
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>Tushar Sharma</strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>tushar@gmail.com</td>
+
+                                <td>
+
+                                    <span class="role-badge user-role">
+
+                                        User
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="status inactive-status">
+
+                                        Inactive
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="edit-btn">
+
+                                        ✏️ Edit
+
+                                    </button>
+
+                                    <button class="delete-btn">
+
+                                        🗑 Delete
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                              </tbody>
+
+                          </table>
+
+                          <div class="pagination-container">
+
+                            <div class="page-info">
+
+                                Showing 1 to 10 of 125 Users
+
+                            </div>
+
+                            <div class="pagination">
+
+                                <button class="page-btn">
+
+                                    ◀ Previous
+
+                                </button>
+
+                                <button class="page-number active-page">
+
+                                    1
+
+                                </button>
+
+                                <button class="page-number">
+
+                                    2
+
+                                </button>
+
+                                <button class="page-number">
+
+                                    3
+
+                                </button>
+
+                                <button class="page-number">
+
+                                    4
+
+                                </button>
+
+                                <button class="page-btn">
+
+                                    Next ▶
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                      </div>
+
+            </section>
+
+             <footer class="footer">
+
+                  <p>
+
+                    © 2026 Smart Ticket Management System
+
+                  </p>
+
+                  <p>
+
+                    Developed by <strong>Tushar Kumar</strong>
+
+                  </p>
+
+                  <span>
+
+                     Version 1.0
+
+                   </span>
+
+                </footer>
+                </main>
+
+                
     
     <script src="../JS/users.js"></script>
 </body>
