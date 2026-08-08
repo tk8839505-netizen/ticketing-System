@@ -314,3 +314,107 @@
 
 }
 
+/* REPORTS RESPONSIVE  */
+
+@media (max-width:1024px){
+
+    .report-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .report-filter{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .report-cards{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .report-card{
+
+        padding:20px;
+
+    }
+
+    .report-card h2{
+
+        font-size:28px;
+
+    }
+
+    .report-filter{
+
+        grid-template-columns:1fr;
+
+        padding:20px;
+
+        gap:15px;
+
+    }
+
+    .report-buttons{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .generate-btn,
+    .export-btn{
+
+        width:100%;
+
+    }
+
+    .report-table-section{
+
+        padding:15px;
+
+        overflow-x:auto;
+
+    }
+
+    .report-table{
+
+        min-width:700px;
+
+    }
+
+    .report-table th,
+    .report-table td{
+
+        padding:12px;
+
+        font-size:13px;
+
+    }
+
+    .performance-summary{
+
+        padding:20px;
+
+    }
+
+    .summary-header{
+
+        gap:10px;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+

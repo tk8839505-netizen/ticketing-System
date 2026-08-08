@@ -342,3 +342,68 @@
     background:#B91C1C;
 
 }
+
+
+@media (max-width:1024px){
+
+    .settings-card{
+
+        padding:25px;
+
+    }
+
+}
+@media (max-width:768px){
+
+    .settings-card{
+
+        padding:20px;
+
+        margin-top:20px;
+
+        min-height:auto;
+
+    }
+
+    .settings-card h2{
+
+        font-size:20px;
+
+    }
+
+    .settings-form{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .notification-item{
+
+        font-size:14px;
+
+    }
+
+    .theme-item{
+
+        font-size:14px;
+
+    }
+
+    .account-buttons{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .reset-btn,
+    .logout-btn{
+
+        width:100%;
+
+    }
+
+}

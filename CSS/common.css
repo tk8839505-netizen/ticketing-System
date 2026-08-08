@@ -370,11 +370,11 @@ body{
         rgb(176, 176, 194)
     );
 
-    border-radius:px;
-
     text-align:center;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgba(15, 4, 4, 0.08);
+
+    margin-top: 40px;
 
 }
 
@@ -406,13 +406,268 @@ body{
 
 }
 
+
+
+
+/* RESPONSIVE DESIGN  */
+
+@media (max-width: 1024px){
+
+    .sidebar{
+
+        width:220px;
+
+    }
+
+    .main-content{
+
+        margin-left:220px;
+
+        width:calc(100% - 220px);
+
+    }
+
+    .topbar{
+
+        padding:0 20px;
+
+    }
+
+    .search-box{
+
+        width:180px;
+
+    }
+
+    .topbar-right{
+
+        gap:12px;
+
+    }
+
+}
+
 @media (max-width:768px){
+
+    .sidebar{
+
+        width:70px;
+
+        padding:20px 10px;
+
+    }
+
+    .sidebar h2{
+
+        display:none;
+
+    }
+
+    .logo{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:20px;
+
+        margin-bottom:20px;
+
+    }
+
+    .menu{
+
+        margin-top:20px;
+
+    }
+
+    .menu li{
+
+        padding:15px 5px;
+
+        justify-content:center;
+
+        font-size:0;
+
+        margin-bottom:10px;
+
+    }
+
+    .menu li a{
+
+        justify-content:center;
+
+        padding:10px 0;
+
+        font-size:0;
+
+        
+
+    }
+
+    .menu li span{
+
+        font-size:20px;
+
+        width:auto;
+
+    }
+
+    .main-content{
+
+        margin-left:70px;
+
+        width:calc(100% - 70px);
+
+    }
+
+}
+
+    .topbar{
+
+        height:auto;
+
+        min-height:70px;
+
+        padding:10px 15px;
+
+    }
 
     .topbar h1{
 
-        font-size: 15px;        
+        font-size:20px;
 
     }
+
+    .topbar-right{
+
+        gap:8px;
+
+    }
+
+    .search-box{
+
+        width:140px;
+
+        height:40px;
+
+    }
+
+    .top-icon{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .avatar{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .profile h4{
+
+        font-size:13px;
+
+    }
+
+    .profile small{
+
+        font-size:11px;
+
+    }
+
+    @media (max-width:480px){
+
+    .sidebar{
+
+        width:60px;
+
+    }
+
+    .main-content{
+
+        margin-left:60px;
+
+        width:calc(100% - 60px);
+
+    }
+
+    .topbar{
+
+        padding:10px;
+
+    }
+
+    .topbar h1{
+
+        font-size:17px;
+
+    }
+
+    .search-box{
+
+        width:100px;
+
+    }
+
+    .profile{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+    
+    }
+    
+    .profile h4{
+
+    font-size:12px;
+
+    }
+
+    .profile small{
+        font-size:10px;
+    }
+
+    .avatar{
+        width:35px;
+        height:35px;
+        font-size:12px;
+    }
+
+    .top-icon{
+
+        width:36px;
+
+        height:36px;
+
+        font-size:16px;
+
+    }
+
+    .avatar{
+
+        width:36px;
+
+        height:36px;
+
+    }
+
+    .content{
+
+        padding:15px;
+
+    }
+
+    .footer{
+
+        padding:20px 10px;
+
+    }
+
 }
-
-

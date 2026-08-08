@@ -79,6 +79,8 @@
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
+    overflow-x:auto;
+
 }
 
 .table-header{
@@ -393,9 +395,102 @@
 
 }
 
-/* FOOTER */
 
-.footer{
+/* DASHBOARD RESPONSIVE */
 
-    margin-top:40px;
+@media (max-width:1024px){
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
 }
+
+@media (max-width:768px){
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+    }
+
+    .card h1{
+
+        font-size:34px;
+
+    }
+
+    .ticket-section{
+
+        padding:15px;
+
+    }
+
+    .ticket-table{
+
+        min-width:700px;
+
+    }
+
+    .ticket-table th,
+    .ticket-table td{
+
+        padding:12px;
+
+        font-size:13px;
+
+    }
+
+    .status{
+
+        min-width:75px;
+
+        padding:6px 10px;
+
+        font-size:12px;
+
+    }
+
+    .priority{
+
+        min-width:60px;
+
+        padding:6px 10px;
+
+        font-size:12px;
+
+    }
+
+    .action-buttons{
+
+        gap:6px;
+
+    }
+
+    .view-btn,
+    .edit-btn,
+    .delete-btn{
+
+        padding:6px 10px;
+
+        font-size:12px;
+
+    }
+    .table-header h2{
+
+        font-size:20px;
+
+    }
+
+}
+
