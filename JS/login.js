@@ -1,3 +1,4 @@
+
 const loginForm = document.getElementById("loginForm");
 
 const username = document.getElementById("username");
@@ -5,6 +6,17 @@ const username = document.getElementById("username");
 const password = document.getElementById("password");
 
 const message = document.getElementById("message");
+
+const  rememberMe = document.getElementById("rememberMe");
+
+const savedUsername = localStorage.getItem("username");
+
+if(savedUsername){
+
+    username.value = savedUsername;
+
+    rememberMe.checked = true;
+}
 
 loginForm.addEventListener("submit", function(event){
 
@@ -41,6 +53,19 @@ loginForm.addEventListener("submit", function(event){
 
      message.textContent = "Login Successful";
      message.style.color = "green";
+
+     if(rememberMe.checked){
+
+        localStorage.setItem("username",username.value);
+
+     }
+     else{
+            
+        localStorage.removeItem("username");
+
+     }
+
+     localStorage.setItem("isLoggedIn","true");
     
       setTimeout(function(){
 
@@ -55,3 +80,6 @@ loginForm.addEventListener("submit", function(event){
 
     }
 });
+
+
+

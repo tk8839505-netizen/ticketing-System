@@ -17,6 +17,17 @@ body{
 
 }
 
+.protected-page{
+
+    visibility: hidden;
+}
+
+
+
+
+
+
+
 .sidebar{
 
     width:260px;
