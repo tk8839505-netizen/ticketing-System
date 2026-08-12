@@ -11,6 +11,8 @@ const  rememberMe = document.getElementById("rememberMe");
 
 const savedUsername = localStorage.getItem("username");
 
+const forgotPassword = document.getElementById("forgotPassword");
+
 if(savedUsername){
 
     username.value = savedUsername;
@@ -81,5 +83,12 @@ loginForm.addEventListener("submit", function(event){
     }
 });
 
+forgotPassword.addEventListener("click",function(event){
+  
+    event.preventDefault();
+
+    window.location.href = "../html/forgot-password.html";
+
+});
 
 
