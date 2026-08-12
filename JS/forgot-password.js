@@ -1,18 +1,30 @@
 const resetUsername = document.getElementById("resetUsername");
 
+const verifyBtn = document.getElementById("verifyBtn");
+
+const verifyMessage = document.getElementById("verifyMessage");
+
 const resetBtn = document.getElementById("resetBtn");
 
-const resetMessage = document.getElementById("resetMessage");
+const resetPasswordMessage = document.getElementById("resetPasswordMessage");
 
 const savedUsername = localStorage.getItem("username");
 
-resetBtn.addEventListener("click",()=>{
+const passwordSection = document.getElementById("passwordSection");
+
+const newPassword = document.getElementById("newPassword");
+
+const confirmPassword = document.getElementById("confirmPassword");
+
+passwordSection.style.display = "none";
+
+verifyBtn.addEventListener("click",()=>{
 
     if(resetUsername.value.trim() === ""){
 
-        resetMessage.textContent = "Plaese Enter Username";
+        verifyMessage.textContent = "Plaese Enter Username";
 
-        resetMessage.style.color = "red";
+        verifyMessage.style.color = "red";
 
 
         resetUsername.focus();
@@ -22,23 +34,78 @@ resetBtn.addEventListener("click",()=>{
 
     if(savedUsername === null){
 
-        resetMessage.textContent = "No saved username found";
+        verifyMessage.textContent = "No saved username found";
 
-        resetMessage.style.color = "red";
+        verifyMessage.style.color = "red";
 
         return;
     }
 
     if(resetUsername.value === savedUsername){
 
-        resetMessage.textContent = "Username found";
+        verifyMessage.textContent = "Username found";
 
-        resetMessage.style.color = "green";
+        verifyMessage.style.color = "green";
+
+        passwordSection.style.display = "block";
     }else{
 
-        resetMessage.textContent = "Username not found";
+        verifyMessage.textContent = "Username not found";
 
-        resetMessage.style.color = "red";
+        verifyMessage.style.color = "red";
     }
+});
+
+
+resetBtn.addEventListener("click", ()=>{
+
+    if(newPassword.value.trim() === ""){
+
+        resetPasswordMessage.textContent = "please Enter New Password";
+
+        resetPasswordMessage.style.color = "red";
+
+        newPassword.focus();
+
+        return;
+    }
+
+    if(confirmPassword.value.trim() === "") {
+
+        resetPasswordMessage.textContent = "Please Confirm Password";
+
+        resetPasswordMessage.style.color = "red";
+
+        confirmPassword.focus();
+
+        return;
+    }
+
+    if(newPassword.value !== confirmPassword.value) {
+
+        resetPasswordMessage.textContent = "Passwords do not match";
+
+        confirmPassword.value = "";
+
+        resetPasswordMessage.style.color = "red";
+
+        confirmPassword.focus();
+
+        return;
+    }
+      resetPasswordMessage.textContent =
+       "Password reset successful";
+
+      resetPasswordMessage.style.color = "green";
+
+       newPassword.value = "";
+
+       confirmPassword.value = "";
+
+       setTimeout(() => {
+
+        window.location.href = "../html/login.html";
+
+       },500);
 
 });
