@@ -118,13 +118,15 @@ const cancelEditBtn = document.getElementById("cancelEditBtn");
 
 const editButttons = document.querySelectorAll(".edit-btn");
 
+let currentRow = null;
+
 editButttons.forEach((button)=>{
 
    button.addEventListener("click", () => {
 
-      const row = button.closest("tr");
+      currentRow = button.closest("tr");
 
-      const cells  = row.querySelectorAll("td");
+      const cells  = currentRow.querySelectorAll("td");
 
       editTicketId.value = cells[0].textContent.trim();
 
@@ -140,6 +142,70 @@ editButttons.forEach((button)=>{
 
 
    });
+
+});
+
+cancelEditBtn.addEventListener(("click"),() => {
+
+    editModal.style.display = "none";
+
+});
+
+
+const saveEditButton = document.getElementById("saveEditBtn");
+
+const customerError = document.getElementById("customerError");
+
+const issueError = document.getElementById("issueError");
+
+saveEditButton.addEventListener(("click"), () => {
+
+    customerError.textContent = "";
+
+    issueError.textContent =  "";
+
+    if(editCustomer.value.trim() === ""){
+
+        customerError.textContent = "Enter customer name";
+
+        customerError.style.color = "red";
+
+        editCustomer.focus();
+
+        return;
+
+    }
+
+    if(editIssue.value.trim() === ""){
+
+        issueError.textContent = "Enter issue";
+
+        issueError.style.color = "red";
+
+        editIssue.focus();
+
+        return;
+
+    }
+
+  currentRow.cells[1].textContent = editCustomer.value.trim();
+
+  currentRow.cells[2].textContent = editIssue.value.trim();
+
+  const prioritySpan = currentRow.cells[3].querySelector(".priority");
+
+  prioritySpan.textContent = editPriority.value;
+
+  prioritySpan.className = "priority " + editPriority.value.toLowerCase();
+
+  const statusSpan = currentRow.cells[4].querySelector(".status");
+
+  statusSpan.textContent = editStatus.value;
+
+  statusSpan.className = "status " + editStatus.value.toLowerCase();
+
+
+  editModal.style.display = "none";
 
 });
 
