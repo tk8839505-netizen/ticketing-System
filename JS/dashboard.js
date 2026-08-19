@@ -209,3 +209,55 @@ saveEditButton.addEventListener(("click"), () => {
 
 });
 
+const themeBtn = document.getElementById("themeBtn");
+
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme === "dark"){
+
+   document.body.classList.add("dark-mode");
+
+}
+
+themeBtn.addEventListener(("click"),() => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+
+    }
+    else{
+
+        localStorage.setItem("theme","light");
+
+    }
+
+
+});
+
+
+// card
+
+// const totalTickets = document.getElementById("totalTicket");
+
+// const openTickets = document.getElementById("openTicket");
+
+// const resolvedTickets = document.getElementById("resolvedTicket");
+
+// const pendingTicket = document.getElementById("pendingTicket");
+
+
+const notificationBtn =
+    document.getElementById("notificationBtn");
+
+const notificationPanel =
+    document.getElementById("notificationPanel");
+
+
+notificationBtn.addEventListener("click", () => {
+
+    notificationPanel.classList.toggle("show");
+
+});

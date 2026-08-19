@@ -606,3 +606,169 @@
     background-color: #ddd;
 
 }
+
+/* Dark Mode */
+
+body.dark-mode{
+
+    background-color: #111827;
+    color: white;
+}
+
+body.dark-mode .dashboard {
+    background-color: #111827;
+}
+
+body.dark-mode .main-content {
+    background-color: #111827;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .topbar {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .ticket-section {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .ticket-table {
+    color: white;
+}
+
+body.dark-mode .ticket-table th {
+    background-color: #374151;
+    color: white;
+}
+
+body.dark-mode .search-box {
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark-mode .search-box::placeholder {
+    color: #d1d5db;
+}
+
+body.dark-mode .footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .edit-modal-content {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .edit-modal-content input {
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark-mode .edit-modal-content select {
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark-mode .edit-modal-content label {
+    color: white;
+}
+
+body.dark-mode .edit-modal-content input::placeholder {
+    color: #d1d5db;
+}
+
+.notification-panel {
+    display: none;
+}
+
+.notification-panel.show {
+    display: block;
+}
+
+/* notification panel */
+
+.notification-panel {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.notification-panel h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #222;
+}
+
+.notification-panel p {
+    margin: 0;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+}
+
+.notification-panel p:last-child {
+    border-bottom: none;
+}
+
+
+.profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 180px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.profile-menu a,
+.profile-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+    background-color: #f3f4f6;
+}

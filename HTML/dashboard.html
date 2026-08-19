@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    
 </head>
 <body class="protected-page">
     
@@ -112,11 +113,22 @@
                 placeholder="Search..."
                 class="search-box"
                 >
-                 <span class="top-icon">🔔</span>
+                 <span class="top-icon" id="notificationBtn">🔔</span>
+ 
+                 <div class="notification-panel"
+                  id="notificationPanel">
 
-                 <span class="top-icon">🌙</span>
+                    <h3>Notifications</h3>
 
-                 <div class="profile">
+                    <p>New ticket received</p>
+
+                    <p>Ticket #102 is pending</p>
+
+                </div>
+
+                 <span class="top-icon" id="themeBtn">🌙</span>
+
+                 <div class="profile" id="profileBtn">
 
                    <div class="avatar">
 
@@ -130,6 +142,18 @@
 
                     <small>Administrator</small>
                    </div>
+
+                     <div class="profile-menu" id="profileMenu">
+
+                        <a href="#">My Profile</a>
+
+                        <a href="setting.html">Settings</a>
+
+                        <button id="logoutBtn">
+                            Logout
+                        </button>
+
+                    </div>
 
                  </div>
 
@@ -147,7 +171,7 @@
                 <h3>Total Tickets</h3>
                  
 
-                 <h1>125</h1>
+                 <h1 id="totalTickets">125</h1>
 
                  <p>+12 Today</p>
 
@@ -157,7 +181,7 @@
 
                    <h3>Open Tickets</h3>
 
-                   <h1>38</h1>
+                   <h1 id="openTicket">38</h1>
 
                    <p>Needs Attention</p>
 
@@ -168,7 +192,7 @@
 
                     <h3>Resolved</h3>
 
-                    <h1>72</h1>
+                    <h1 id="resolvedTickets">72</h1>
 
                     <p>Completed</p>
 
@@ -178,7 +202,7 @@
 
                     <h3>Pending</h3>
 
-                    <h1>15</h1>
+                    <h1 id="pendingTickets">15</h1>
 
                     <p>Waiting</p>
 
